@@ -1,0 +1,19 @@
+INSTALL = cp -puv
+BACKUP  = cp -auv
+
+install::
+	$(INSTALL) $(PROGRAM) $(DESTDIR)
+
+release:: $(RELEASE_ARCHIVE).ish
+
+$(RELEASE_ARCHIVE).ish: $(RELEASE_ARCHIVE).LZH
+	mic -o -s $(RELEASE_ARCHIVE).LZH
+
+$(RELEASE_ARCHIVE).LZH: $(RELEASE_FILES)
+	LHA u $(RELEASE_ARCHIVE).LZH $?
+
+backup::
+	fish -fc '$(BACKUP) * $(BACKUPDIR)'
+
+clean::
+	$(RM) $(PROGRAM) $(RELEASE_ARCHIVE).LZH $(RELEASE_ARCHIVE).ish

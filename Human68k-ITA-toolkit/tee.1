@@ -1,0 +1,133 @@
+
+
+
+TEE(1)         Human68k ITA TOOLKIT User's Manual          TEE(1)
+
+
+
+[1m–¼Ì[m
+     tee - •W€“ü—Í‚ð•W€o—Í‚É“]‘—‚µC‚©‚Âƒtƒ@ƒCƒ‹‚ÉƒRƒs[‚·‚é
+
+[1mŠT—v[m
+     [1mtee[m [ [1m-Bia[m ] [ - | ƒtƒ@ƒCƒ‹ ] ...
+
+[1m‰ðà[m
+     [4mtee[m ‚ÍC•W€“ü—Í‚ð•W€o—Í‚É“]‘—‚µC‚©‚Â[4mƒtƒ@ƒCƒ‹[m‚ÉƒRƒs[‚µ‚Ü
+     ‚·Do—Íƒtƒ@ƒCƒ‹–¼‚ª [1m-[m ‚Å‚ ‚éê‡C‚»‚ê‚Í•W€o—Í‚ðˆÓ–¡‚µ‚Ü‚·D
+
+     [1m^Z[m ƒR[ƒh‚ª“ü—Í‚³‚ê‚é‚ÆC’Êí‚Í‚»‚±‚Å“ü—Í‚ð‘Å‚¿Ø‚èC[1m^Z[m ˆÈ~
+     ‚ðŽÌ‚Ä‚Ü‚·D
+
+     [4mtee[m ‚ÉŽw’è‚Å‚«‚éƒIƒvƒVƒ‡ƒ“‚ðˆÈ‰º‚ÉŽ¦‚µ‚Ü‚·D
+
+     [1m-B[m   “ü—Í‚ªƒuƒƒbƒNEƒfƒoƒCƒX‚Å‚ ‚éê‡‚É‚Í [1m^Z[m ƒR[ƒh‚Å“ü—Í
+          ‚ð‘Å‚¿Ø‚ç‚¸C•K‚¸“ü—Íƒtƒ@ƒCƒ‹‚ÌI‚í‚è‚Ü‚Å‚ð“ü—Í‚µ‚Ü‚·D
+
+     [1m-i[m   [1m^C[m ‚É‚æ‚é’†Ž~‹@\‚ð–³Œø‚É‚µ‚Ü‚·D‚½‚¾‚µ Human68k ‚Ìƒo[
+          ƒWƒ‡ƒ“‚ª 2.0 –¢–ž‚Å‚ ‚éê‡‚É‚Í‚±‚ÌƒIƒvƒVƒ‡ƒ“‚Í–³Œø‚Å‚·D
+
+     [1m-A[m   [4mƒtƒ@ƒCƒ‹[m‚ªŠù‘¶‚Ìƒtƒ@ƒCƒ‹‚Å‚ ‚éê‡Cã‘‚«‚¹‚¸‚Éo—Í‚ð
+          [4mƒtƒ@ƒCƒ‹[m‚Ì––”ö‚É’Ç‰Á‚µ‚Ü‚·D‚½‚¾‚µ[4mƒtƒ@ƒCƒ‹[m‚É [1m^Z[m ƒR[ƒh
+          ‚ªŠÜ‚Ü‚ê‚Ä‚¢‚æ‚¤‚Æ‚à‚»‚ê‚ðƒtƒ@ƒCƒ‹‚Ì––”ö‚Æ‚Í”F‚ß‚¸C‚ 
+          ‚­‚Ü‚Å‚à•¨—“I‚Èƒtƒ@ƒCƒ‹‚ÌI‚í‚è‚É’Ç‰Á‚µ‚Ü‚·D
+
+     [1m-a[m   [1m-A[m ‚Æ“¯—l‚Å‚·‚ªC[4mƒtƒ@ƒCƒ‹[m‚É [1m^Z[m ƒR[ƒh‚ªŠÜ‚Ü‚ê‚Ä‚¢‚ê‚ÎC
+          ‚»‚ÌˆÊ’u‚Éo—Í‚ð’Ç‰Á‚µ‚Ü‚·D‚±‚ÌƒIƒvƒVƒ‡ƒ“‚Íƒtƒ@ƒCƒ‹‚ð
+          ƒV[ƒN‚·‚é‚Ì‚ÉŽžŠÔ‚ª‚©‚©‚è‚Ü‚·‚Ì‚ÅC•¨—“I‚È’Ç‰Á‚Å\‚í
+          ‚È‚¢‚Ì‚È‚ç‚Î [1m-A[1m ƒIƒvƒVƒ‡ƒ“‚ðŽg—p‚·‚é‚±‚Æ‚ðŠ©‚ß‚Ü‚·D
+
+     ˆÈã‚ÌƒIƒvƒVƒ‡ƒ“‚Í -B -A ‚Ì‚æ‚¤‚É’P“Æ‚É‹Lq‚·‚é‚±‚Æ‚à‚Å‚«‚Ü
+     ‚·‚µC-BA ‚Ì‚æ‚¤‚É˜AŒ‹‚µ‚ÄŽw’è‚·‚é‚±‚Æ‚à‚Å‚«‚Ü‚·D
+
+[1mf’f[m
+     ˆø”‚ÉƒGƒ‰[‚ª‚ ‚é‚Æ‚«‚É‚Í 1 ‚ð•Ô‚µ‚Ü‚·Dì¬‚Å‚«‚È‚¢ƒtƒ@ƒC
+     ƒ‹‚ª 1‚Â‚Å‚à‚ ‚Á‚½ê‡‚É‚Í 2 ‚ð•Ô‚µ‚Ü‚·D“üo—ÍƒGƒ‰[‚âƒƒ‚
+     ƒŠ•s‘«‚È‚Ç‚Ì[‚ÈƒGƒ‰[‚ª‹N‚±‚Á‚½ê‡‚É‚Í 3 ‚ð•Ô‚µ‚Ü‚·D‘S
+     ‚Ä‚ª‚¤‚Ü‚­‚¢‚Á‚½‚È‚ç‚Î 0 ‚ð•Ô‚µ‚Ü‚·D
+
+[1m’‰[m
+     ƒoƒCƒiƒŠEƒf[ƒ^‚ð“ü—Í‚·‚éÛ‚É‚Í [1m-B[m ƒIƒvƒVƒ‡ƒ“‚ð–Y‚ê‚¸‚ÉŽw’è
+     ‚µ‚Ä‚­‚¾‚³‚¢D
+
+[1m•s‹ï‡[m
+     ƒLƒƒƒ‰ƒNƒ^EƒfƒoƒCƒX‚©‚ç“ü—Í‚·‚éÛ‚É‚Í [1m^Z[m ƒR[ƒh‚Å“ü—Í‚ð‘Å‚¿
+     Ø‚ç‚È‚¢‚æ‚¤‚É‚·‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñD
+
+     ƒRƒ“ƒ\[ƒ‹‚©‚ç [1m^Z[m ‚ð“ü—Í‚µ‚Ä‚àC‰üsƒR[ƒh‚ª“ü—Í‚³‚ê‚é‚Ü‚Å‚Í
+     “ü—Í‚ª“Ç‚ÝŽæ‚ç‚êC‰üsƒR[ƒh‚ª“ü—Í‚³‚ê‚½Žž“_‚Å [1m^Z[m ƒR[ƒhˆÈ~
+     ‚ªŽÌ‚Ä‚ç‚ê‚Ü‚·D
+
+
+
+
+(printed 3/6/91)        Itagaki Fumihiko                   Page 1
+
+
+
+
+
+
+TEE(1)         Human68k ITA TOOLKIT User's Manual          TEE(1)
+
+
+
+     Žc”O‚È‚±‚Æ‚É Human68k ‚É‚ÍƒeƒLƒXƒgEƒtƒ@ƒCƒ‹‚ÌI’[‚ð [1m^Z[m ƒR[
+     ƒh‚ÅŽ¦‚·KŠµ‚ª‹Œ‘ÔˆË‘R‚Æ‚µ‚ÄŽc‚Á‚Ä‚¢‚Ü‚·D‚±‚ÌKŠµ‚ªŽÌ‚Ä‚ç‚ê
+     ‚ê‚ÎCƒeƒLƒXƒg‚ÆƒoƒCƒiƒŠ‚ð‹æ•Ê‚¹‚¸‚ÉC‚Ç‚Ìƒtƒ@ƒCƒ‹‚à‘S‚­“¯‚¶
+     ‘€ì‚Åˆ—‚·‚é‚±‚Æ‚ª‚Å‚«‚é‚æ‚¤‚É‚È‚èC[4mtee[m ‚©‚çXˆ«‚È [1m-B[m ƒIƒv
+     ƒVƒ‡ƒ“‚â [1m-A[m ƒIƒvƒVƒ‡ƒ“‚ðŽæ‚è‹Ž‚é‚±‚Æ‚ª‚Å‚«‚é‚Å‚µ‚å‚¤D‚½‚¾‚µ
+     ‚»‚Ì‚Æ‚«‚É‚ÍCƒ†[ƒU‚ª EOF ‚ð“ü—Í‚·‚é‚±‚Æ‚ð‰Â”\‚É‚·‚éƒRƒ“ƒ\[
+     ƒ‹Eƒhƒ‰ƒCƒo‚ª•K—v‚Æ‚È‚é‚±‚Æ‚Å‚µ‚å‚¤D
+
+[1mŠÖ˜AŽ–€[m
+     bcat(1), cat(1), head(1), more(1), pr(1), tail(1), trunc(1)
+
+[1m§ìE’˜ì[m
+     Copyright(C)1991 by ”ÂŠ_ Žj•F (Itagaki Fumihiko)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(printed 3/6/91)        Itagaki Fumihiko                   Page 2
+
+
+
+

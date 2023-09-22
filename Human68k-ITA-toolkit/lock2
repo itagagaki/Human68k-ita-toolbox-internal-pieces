@@ -1,0 +1,4 @@
+#! fish -f
+restart:
+lock || goto restart
+

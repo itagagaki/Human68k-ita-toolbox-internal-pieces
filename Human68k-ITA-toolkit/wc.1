@@ -1,0 +1,133 @@
+
+
+
+WC(1)          Human68k ITA TOOLKIT User's Manual           WC(1)
+
+
+
+[1m–¼Ì[m
+     wc - s”C’PŒê”C•¶Žš”‚ð•\Ž¦‚·‚é
+
+[1mŠT—v[m
+     [1mwc[m [ [1m-SZlwc[m ] [ ƒtƒ@ƒCƒ‹ ] ...
+
+[1m‰ðà[m
+     [4mwc[m ‚ÍCŠe[4mƒtƒ@ƒCƒ‹[m‚Ìs”C’PŒê”C•¶Žš”‚ð”‚¦‚Ä•W€o—Í‚É•\
+     Ž¦‚µ‚Ü‚·D[4mƒtƒ@ƒCƒ‹[m‚ªŽw’è‚³‚ê‚Ä‚¢‚È‚¢ê‡‚É‚Í•W€“ü—Í‚©‚ç‚Ì“ü
+     —Í‚ð”‚¦‚Ü‚·D[4mƒtƒ@ƒCƒ‹[m‚ªŽw’è‚³‚ê‚½ê‡‚É‚Í”‚Ì•\Ž¦‚É‘±‚¯‚Äƒtƒ@
+     ƒCƒ‹–¼‚à•\Ž¦‚µ‚Ü‚·Dƒtƒ@ƒCƒ‹‚ªƒI[ƒvƒ“‚Å‚«‚È‚¢‚Æ‚«‚É‚ÍƒGƒ‰[E
+     ƒƒbƒZ[ƒW‚ð•W€ƒGƒ‰[o—Í‚É•\Ž¦‚µ‚ÄŽŸ‚Ì[4mƒtƒ@ƒCƒ‹[m‚©‚ç‚Ìˆ—‚ð
+     Œp‘±‚µ‚Ü‚·D[4mƒtƒ@ƒCƒ‹[m‚ª•¡”‚Å‚ ‚é‚Æ‚«‚É‚ÍÅŒã‚É‡Œv‚ð•\Ž¦‚µ‚Ü
+     ‚·D
+
+     “ü—Í‚ª cooked ƒ‚[ƒh‚ÌƒLƒƒƒ‰ƒNƒ^EƒfƒoƒCƒXi[4mCON[m ‚È‚Çj‚Å‚ ‚é
+     ê‡C[1m^D[m (control-[1mD[m) ‚©‚Ü‚½‚Í [1m^Z[m ‚ð“Ç‚ÝŽæ‚é‚ÆC‚»‚±‚Å“ü—Í‚ð
+     ‘Å‚¿Ø‚è‚Ü‚·D
+
+     ‚±‚±‚ÅCs‚Æ‚Í‰üs ([1m^J[m) ‚Ü‚Å‚Ì•¶Žš—ñ‚Å‚·DÅŒã‚Ì‰üs‚©‚ç [1mEOF[m
+     ‚Ü‚Å‚Ì•”•ª‚Ís”‚É”‚¦‚Ü‚¹‚ñD
+
+     ’PŒê‚Æ‚ÍC‹ó”’•¶ŽšC‚·‚È‚í‚¿CƒXƒy[ƒXC…•½ƒ^ƒu ([1m^I[m)C‰üs
+     ([1m^J[m)C‚’¼ƒ^ƒu ([1m^K[m)C‰ü•Å ([1m^L[m)C•œ‹A ([1m^M[m) ‚Å‹æØ‚ç‚ê‚½•¶Žš—ñ
+     ‚Å‚·D
+
+     •¶Žš”‚ÍC“ü—Í‚©‚ç“Ç‚ÝŽæ‚Á‚½ƒoƒCƒg”‚Å‚·D1•¶Žš‚Ì 2ƒoƒCƒg•¶
+     Žš‚Í 2•¶Žš‚Æ‚È‚è‚Ü‚·D‚Ü‚½C•œ‹A‰üs ([1m^M^J[m) ‚à‚»‚Ì‚Ü‚Ü 2•¶Žš
+     ‚Æ‚µ‚Ä”‚¦‚ç‚ê‚Ü‚·D
+
+     [4mwc[m ‚ÉŽw’è‚Å‚«‚éƒIƒvƒVƒ‡ƒ“‚ðˆÈ‰º‚ÉŽ¦‚µ‚Ü‚·D
+
+     [1m-S[m   Žw’è‚µ‚½“ü—Íƒtƒ@ƒCƒ‹‚ªƒI[ƒvƒ“‚Å‚«‚È‚¢‚Æ‚«‚ÌƒGƒ‰[Eƒƒb
+          ƒZ[ƒW‚Ì•\Ž¦‚ð—}Ž~‚µ‚Ü‚·D
+
+     [1m-Z[m   ‚¢‚©‚È‚éê‡‚É‚à [1m^Z[m ƒR[ƒh‚Å“ü—Í‚ð‘Å‚¿Ø‚è‚Ü‚·D
+
+     [1m-l[m   s”‚ð”‚¦‚Ä•\Ž¦‚µ‚Ü‚·D
+
+     [1m-w[m   ’PŒê”‚ð”‚¦‚Ä•\Ž¦‚µ‚Ü‚·D
+
+     [1m-c[m   •¶Žš”‚ð”‚¦‚Ä•\Ž¦‚µ‚Ü‚·D
+
+     ˆÈã‚ÌƒIƒvƒVƒ‡ƒ“‚Í -l -w ‚Ì‚æ‚¤‚É’P“Æ‚É‹Lq‚·‚é‚±‚Æ‚à‚Å‚«‚Ü
+     ‚·‚µC-lw ‚Ì‚æ‚¤‚É˜AŒ‹‚µ‚ÄŽw’è‚·‚é‚±‚Æ‚à‚Å‚«‚Ü‚·D
+
+     [1m-l[mC[1m-w[mC[1m-c[m ‚Ì‚¢‚¸‚ê‚àŽw’è‚µ‚È‚¯‚ê‚Î [1m-lwc[m ‚ðŽw’è‚µ‚½‚±‚Æ‚É‚È
+     ‚è‚Ü‚·D
+
+[1mf’f[m
+
+     ˆø”‚ÉƒGƒ‰[‚ª‚ ‚é‚Æ‚«‚É‚Í 1 ‚ð•Ô‚µ‚Ü‚·D1‚Â‚Å‚àƒI[ƒvƒ“‚Å‚«
+
+
+
+(printed 8/6/91)        Itagaki Fumihiko                   Page 1
+
+
+
+
+
+
+WC(1)          Human68k ITA TOOLKIT User's Manual           WC(1)
+
+
+
+     ‚È‚¢ƒtƒ@ƒCƒ‹‚ª‚ ‚Á‚½ê‡‚É‚Í 2 ‚ð•Ô‚µ‚Ü‚·D“üo—ÍƒGƒ‰[‚âƒ
+     ƒ‚ƒŠ•s‘«‚È‚Ç‚Ì[‚ÈƒGƒ‰[‚ª‹N‚±‚Á‚½ê‡‚É‚Í 3 ‚ð•Ô‚µ‚Ü‚·D
+     ‘S‚Ä‚ª‚¤‚Ü‚­‚¢‚Á‚½‚È‚ç‚Î 0 ‚ð•Ô‚µ‚Ü‚·D
+
+[1m•s‹ï‡[m
+     cooked ƒ‚[ƒh‚ÌƒLƒƒƒ‰ƒNƒ^EƒfƒoƒCƒX‚©‚ç‚ÍCƒf[ƒ^‚Æ‚µ‚Ä‚Ì [1m^D[m
+     ‚¨‚æ‚Ñ [1m^Z[m ‚ð“ü—Í‚·‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñD
+
+     [4mCON[m ‚©‚ç‚Ís’PˆÊ‚Å“ü—Í‚³‚ê‚Ü‚·‚Ì‚ÅC[1m^D[m ‚ ‚é‚¢‚Í [1m^Z[m ‚ÌŒã‚É‚à
+     ‰üs‚ª•K—v‚Å‚·D
+
+[1m§ìE’˜ì[m
+     Copyright(C)1991 by ”ÂŠ_ Žj•F (Itagaki Fumihiko)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(printed 8/6/91)        Itagaki Fumihiko                   Page 2
+
+
+
+
